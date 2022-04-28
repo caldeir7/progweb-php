@@ -21,7 +21,7 @@
 </head>
 <body>
     <h1>
-        Condicionais
+        Condicionaiss
     </h1>
     <hr>
     <!-- Condicional simples do php só contem if -->
