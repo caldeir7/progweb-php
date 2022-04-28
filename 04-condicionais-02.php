@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Condicionais PHP (versaõ 2)</title>
+    <link rel="stylesheet" href="css/style.css">
 
     <style>
         .aprovado{
@@ -43,12 +44,12 @@
 
     <h2>Compostos</h2>
 <?php
-    $nota1 = 7;
-    $nota2 = 2;
+    $nota1 = 8;
+    $nota2 = 9;
     $media = ($nota1 + $nota2) / 2;
     // echo "<p>Média: $media</p>";
 ?>
-    <h3> Média:<?=$media?></h3>
+    <h3> Média: <?=$media?></h3>
 
 <?php  
     if ($media >= 7) {
@@ -70,7 +71,7 @@
 ?>
 
 
-    <p class='aprovado'>Aprovado</p>
+    <p class="aprovado">Aprovado</p>
 
 
 <?php
@@ -78,7 +79,7 @@
 ?>
 
 
-    <p class='recuperacao'>Recuperação</p>
+    <p class="recuperacao">Recuperação</p>
 
 
 <?php
@@ -86,7 +87,7 @@
 ?>   
 
 
-    "<p class="reprovado">Reprovado</p>
+    <p class="reprovado">Reprovado</p>
 
     
 <?php
@@ -95,7 +96,7 @@
 
     <h2>switch/case</h2>
 <?php
-$opcao = 3;
+$opcao = 4;
 
     switch($opcao){
         case 1: $assunto = "Reclamação"; break;
@@ -103,8 +104,8 @@ $opcao = 3;
         case 3: $assunto = "Informações"; break;
         default: $assunto = "Falar com um Atendente"; break;
     }
-    echo "<p>$assunto</p>";
-
-?>    
+?> 
+ <p><?=$assunto?></p>
+ 
 </body>
 </html>
