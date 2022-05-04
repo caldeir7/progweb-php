@@ -10,22 +10,13 @@
 
 <?php
 $meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio","junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
-$i = 0;
-
-for($i = 0; $meses < 12; $i++){
 ?>
-    <ol>
-        <li><?=$meses[0]?></li>
-    </ol>
-
-<?php
 
 
-}
-
-
-?>
 
     
+        
+
+ 
 </body>
 </html>

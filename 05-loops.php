@@ -61,7 +61,42 @@ for($i = 1; $i <= 3; $i++){
     <h2>Exerciico Array e Loop</h2>
     <p>Crie um array contendo os nomes dos 12 meses do ano</p>
     <p>Usando o loop, faça os nomes dos meses aparecer em uma lista ordenada.</p>
+<?php
+$meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+?>
+    
+    <ol> 
+        <?php for($i = 0; $i < count($meses); $i++){ ?>
+        <li> <?=$meses[$i]?> </li> 
+        <?php } ?>
+    </ol>
+    
+    <h2>foreach (para cada)</h2>
+    <p>Loop exclusivo para Arrays</p>
 
+    <ol>
+        <!-- palavra-chave 'as' : como -->
+        <?php foreach($meses as $mes){ ?>
+        <li> <?=$mes?> </li>
+        <?php } ?>
+    </ol>
+
+<?php
+    // Array Associativo (formados por pares de chave=>valor)
+    $curso = [
+        // chave (key)  =>  valor (value)
+        "nome" => "Programador Web",
+        "carga_horaria" => 240,
+        "unidade" => "Penha",
+        "ucs" => 5
+    ];
+
+    foreach($curso as $dados => $valor){
+?>
+    <p> <?=$dados?> - <?=$valor?> </p>
+<?php
+    } 
+?>
 
 </body>
 </html>
